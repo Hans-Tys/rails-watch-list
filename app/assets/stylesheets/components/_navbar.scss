@@ -1,6 +1,10 @@
 .navbar-lewagon {
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 56px;
   justify-content: space-between;
-  background: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +13,13 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon-white {
+  background: #F7F7F7;
+}
+
+.leftside {
+  display: flex;
+  justify-content: space-between;
 }

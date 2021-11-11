@@ -1,0 +1,30 @@
+<div class="navbar-lewagon sticky-top">
+  <img class="avatar-large" src="https://www.pinclipart.com/picdir/middle/4-48637_free-clipart-popcorn-popcorn-movie-reel-movie-night.png" alt="">
+  <div class="leftside">
+    <h4>my lists</h4>
+    <h4>new lists</h4>
+  </div>
+
+</div>
+
+<div class="home-banner">
+  <h1>Watch List</h1>
+  <p>
+  <span id="banner-typed-text"></span>
+</p>
+</div>
+
+<h2 class="m-2">List</h2>
+<% @lists.each do |list| %>
+  <div class="card w-25 p-3 m-2"><%= link_to list.name, list_path(list) %></div>
+<% end %>
+
+<button class="m-2"><%= link_to "create now list", new_list_path %></button>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <%= "Lorem ipsum dolor sit amet, consectetur adipisicing elit " * 100 %>
+    </div>
+  </div>
+</div>
